@@ -1,13 +1,13 @@
 import React from 'react';
-import { ContainerPage, ContainerLeft } from './style'
+import { ContainerPage, ContainerLeft, ContainerRigth } from './style'
 
 export const LoginStructure = () =>  {
   return (
     <ContainerPage>
-        <ContainerLeft className='ladoesquerdo'>
+        <ContainerLeft>
         </ContainerLeft>
-        <div className='ladodireito'>
-        </div>
+        <ContainerRigth>
+        </ContainerRigth>
     </ContainerPage>
   );
 }

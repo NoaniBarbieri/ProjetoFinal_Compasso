@@ -20,3 +20,13 @@ export const ContainerLeft = styled.div`
     color: white;
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
 `
+
+export const ContainerRigth = styled.div`
+    width:50%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(${require('../../assets/images/background.png')});
+    background-repeat: no-repeat;
+    background-size: cover;
+`
