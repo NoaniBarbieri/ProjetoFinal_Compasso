@@ -19,7 +19,6 @@ export const ContainerLeft = styled.div`
     align-items: center;
     color: #E0E0E0;
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
-    font-family: MarkPro, sans-serif;
 `
 
 export const ContainerRigth = styled.div`
@@ -36,6 +35,7 @@ export const ContainerTop = styled.div`
     h1{
         max-width: 118px;
         max-height: 76px;
+        font-family: MarkPro, sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 60px;
@@ -46,10 +46,25 @@ export const ContainerTop = styled.div`
     p{
         max-width: 301px;
         max-height: 52px;
+        font-family: MarkPro, sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
     }
 
+`
+
+export const LoginText = styled.p`
+        display: flex;
+        max-width: 81px;
+        max-height: 38px;
+        font-family: MarkPro, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+        margin-top: 95px;
+        margin-bottom: 15px;
+        margin-right: 225px;
 `
