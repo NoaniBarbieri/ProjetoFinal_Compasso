@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import LoginPage from './Pages/LoginPage'
-import HomePage from './Pages/HomePage'
-import SearchPage from './Pages/SearchPage'
-import NotFound from './Pages/NotFoundPage'
+import { LoginPage } from './Pages/LoginPage/index.jsx'
+import HomePage from './Pages/HomePage.jsx'
+import SearchPage from './Pages/SearchPage.jsx'
+import NotFound from './Pages/NotFoundPage.jsx'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
             <Route exact path='/' element={<LoginPage/>} />
             <Route exact path='/home' element={<HomePage />} />
             <Route exact path='/SearchPage' element={<SearchPage />}/>
-            <Route exact path='*' element={<NotFound/>}/>
+            <Route  path='*' element={<NotFound/>}/>
         </Routes>
     </BrowserRouter>
   );
