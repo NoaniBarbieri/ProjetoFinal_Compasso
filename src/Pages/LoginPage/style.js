@@ -19,6 +19,11 @@ export const ContainerLeft = styled.div`
     align-items: center;
     color: #E0E0E0;
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+
+    @media screen and (max-width: 920px){
+        width:100%;
+        position: absolute;
+    }
 `
 
 export const ContainerRigth = styled.div`
@@ -29,6 +34,10 @@ export const ContainerRigth = styled.div`
     background-image: url(${require('../../assets/images/background.png')});
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 920px){
+        display:none;
+    }
 `
 
 export const ContainerTop = styled.div`
@@ -67,4 +76,10 @@ export const LoginText = styled.p`
         margin-top: 95px;
         margin-bottom: 15px;
         margin-right: 225px;
+`
+
+export const FormContainer = styled.div`
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
 `
