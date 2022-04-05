@@ -62,6 +62,21 @@ export const ContainerTop = styled.div`
         line-height: 20px;
     }
 
+    @media (max-width: 320px){
+        h1{
+            font-size: 30px;
+            margin-bottom: 10px;
+            max-height: 50px;
+            margin-left: 15px;
+        }
+        p{
+            font-size: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+            
+    }
+
 `
 
 export const LoginText = styled.p`
@@ -76,6 +91,12 @@ export const LoginText = styled.p`
         margin-top: 95px;
         margin-bottom: 15px;
         margin-right: 225px;
+
+        @media (max-width: 320px){
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 0px;
+        }
 `
 
 export const FormContainer = styled.div`
@@ -83,4 +104,10 @@ export const FormContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-left: 50px;
+    
+    @media (max-width: 420px){
+        margin-left: 0px;
+    }
+
+
 `

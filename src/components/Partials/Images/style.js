@@ -16,6 +16,13 @@ export const CompassLogoLeft = styled.img`
         display:inline-block;
         margin:50px;
     }
+
+    @media (max-width: 320px){
+        margin: 15px;
+        width: 180px;
+        height: 42px;
+    }
+    
 `
 
 export const ImageScarecrow = styled.img`

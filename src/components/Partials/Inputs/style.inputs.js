@@ -19,6 +19,11 @@ export const UserInputStyle = styled.input`
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: right 20px top 50%;
+
+    @media (max-width: 320px){
+        margin-bottom: 10px;
+        margin-top: 2px;
+    }
 `;
 
 export const PassInputStyle = styled(UserInputStyle)`
