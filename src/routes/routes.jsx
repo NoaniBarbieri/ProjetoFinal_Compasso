@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { LoginPage } from '../Pages/LoginPage/index.jsx'
 import HomePage from '../Pages/HomePage.jsx'
 import SearchPage from '../Pages/SearchPage.jsx'
-import NotFound from '../Pages/NotFoundPage.jsx'
+import NotFound from '../Pages/NotFoundPage/index.jsx'
 
 function PageRoutes() {
   return (
