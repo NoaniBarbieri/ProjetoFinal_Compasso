@@ -5,14 +5,14 @@ export const CompassLogoRigth = styled.img`
     height: 70px;
     margin: 35px auto 0 auto;
 
-    @media screen and (max-width: 920px){
+    @media screen and (max-width: 1024px){
         display:none;
     }
 `;
 
 export const CompassLogoLeft = styled.img`
     display: none;
-    @media (max-width: 920px){
+    @media (max-width: 1024px){
         display:inline-block;
         margin:50px;
     }

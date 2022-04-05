@@ -20,7 +20,7 @@ export const ContainerLeft = styled.div`
     color: #E0E0E0;
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
 
-    @media screen and (max-width: 920px){
+    @media screen and (max-width: 1024px){
         width:100%;
         position: absolute;
     }
@@ -35,7 +35,7 @@ export const ContainerRigth = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media screen and (max-width: 920px){
+    @media screen and (max-width: 1024px){
         display:none;
     }
 `
