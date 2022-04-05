@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {PassInputStyle} from '../Partials/Inputs/style.inputs';
 
-const LogPassInput = React.forwardRef((props, ref) => {
+export function LogPassInput(){
+    const [ aux, setAux ] = useState({
+        pass: "",
+    });
+    console.log(aux)
     return (
-        <PassInputStyle type="text" ref={ref} {...props} placeholder="Senha" />
+        <PassInputStyle  type="text" onChange={(e) => setAux({pass: e.target.value})} placeholder="Senha"/>
     );
-})
+}
 
-export default LogPassInput;
