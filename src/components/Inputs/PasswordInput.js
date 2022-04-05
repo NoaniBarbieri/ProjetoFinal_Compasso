@@ -7,7 +7,7 @@ export function LogPassInput(){
     });
     console.log(aux)
     return (
-        <PassInputStyle  type="text" onChange={(e) => setAux({pass: e.target.value})} placeholder="Senha"/>
+        <PassInputStyle  type="password" onChange={(e) => setAux({pass: e.target.value})} placeholder="Senha"/>
     );
 }
 
