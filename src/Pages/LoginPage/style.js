@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerPage = styled.div`
-    position: fixed;
+    position: absolute;
     min-width:100%;
     min-height: 100%;
     display: flex;
