@@ -79,7 +79,8 @@ export const LoginText = styled.p`
 `
 
 export const FormContainer = styled.div`
-    width: 65%;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
 `
