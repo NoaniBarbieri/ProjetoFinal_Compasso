@@ -4,6 +4,7 @@ import CompassLogoWhite from "../../assets/images/Logo-Compasso-Branco-hor 1.png
 import { CompassLogoRigth, CompassLogoLeft } from '../../components/Partials/Images/style'
 import  {LogUserInput} from '../../components/Inputs/UserInput'
 import  {LogPassInput}  from '../../components/Inputs/PasswordInput'
+import LoginButton from '../../components/Buttons/ButtonLogin'
 
 export const LoginPage = () =>  {
   return (
@@ -19,6 +20,8 @@ export const LoginPage = () =>  {
             <form>
                 <LogUserInput/>
                 <LogPassInput/>
+                {/* espaço para validações */}
+                <LoginButton/>
             </form>
           </FormContainer>
         </ContainerLeft>
