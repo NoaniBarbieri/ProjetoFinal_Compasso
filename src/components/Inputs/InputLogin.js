@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { UserInputStyle}  from './style.inputs';
 import {PassInputStyle} from './style.inputs';
 import { useAuth } from '../../providers/authUser'
+import { usePass } from '../../providers/authPassword'
 
 export function LogUserInput(){
     const { user, setUser } = useAuth();
@@ -14,12 +15,10 @@ export function LogUserInput(){
 
 
 export function LogPassInput(){
-    const [ aux, setAux ] = useState({
-        pass: "",
-    });
-    console.log(aux)
+    const { pass, setPass } = usePass();
+    console.log(pass)
     return (
-        <PassInputStyle  type="password" onChange={(e) => setAux({pass: e.target.value})} placeholder="Senha"/>
+        <PassInputStyle  type="password" onChange={(e) => setPass({pass: e.target.value})} placeholder="Senha"/>
     );
 }
 

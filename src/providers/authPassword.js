@@ -8,18 +8,6 @@ export const PassProvider = (props) => {
         password: "",
     });
 
-    // useEffect(() => {
-    //     const passStorage = localStorage.getItem("pass");
-    //     if(passStorage){
-    //         setPass(JSON.parse(passStorage));
-    //     }else{
-    //         setPass({
-    //             pass: "",
-    //         });
-    //     }
-    // }, []);
-
-
     return (
         < PassContext.Provider value={{pass, setPass }}>
             {props.children}
