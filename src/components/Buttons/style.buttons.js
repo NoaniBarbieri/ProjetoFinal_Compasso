@@ -4,6 +4,7 @@ export const ButtonStyle = styled.button `
     width: clamp(100px,80vw,379px);
     padding: clamp(7px,3vw,20px) 20px;
     margin-bottom: 15px;
+    margin-top: 10px;
     border: 2px solid;
     border-radius: 50px;
     border-color: #c13216;
