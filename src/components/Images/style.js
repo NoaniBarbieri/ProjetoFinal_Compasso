@@ -14,7 +14,8 @@ export const CompassLogoLeft = styled.img`
     display: none;
     @media (max-width: 1024px){
         display:inline-block;
-        margin:50px;
+        margin-top: 20px;
+        margin-bottom: 45px;
     }
 
     @media (max-width: 320px){

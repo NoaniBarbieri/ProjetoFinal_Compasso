@@ -114,9 +114,9 @@ export const FormContainer = styled.div`
 
 export const ValidationContainer = styled.div`
     max-width: 50%;
-    height: 90px;
+    height: 70px;
 
     @media (max-width: 420px){
-        height: 65px;
+        height: 55px;
     }
 `
