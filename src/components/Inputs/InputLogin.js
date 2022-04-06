@@ -6,7 +6,7 @@ import { usePass } from '../../providers/authPassword'
 
 export function LogUserInput(){
     const { user, setUser } = useAuth();
-    localStorage.setItem('user', JSON.stringify(user));
+    localStorage.setItem('user', user.name);
     setUser(user)
     return (
         <UserInputStyle  type="text" onChange={(e) => setUser({name: e.target.value})} placeholder="Usuário"/>
