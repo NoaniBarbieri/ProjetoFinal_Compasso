@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonStyle } from '../Partials/Buttons/style.buttons';
+import { ButtonStyle } from './style.buttons';
 
 
 const LoginButton = () => {

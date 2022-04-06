@@ -1,6 +1,6 @@
 import React from "react";
 import { NotFoundContainer, TextNotFound } from "./style";
-import {ImageScarecrow , ImageLogo } from "../../components/Partials/Images/style.js";
+import {ImageScarecrow , ImageLogo } from "../../components/Images/style.js";
 import { Link } from "react-router-dom";
 import Image404 from  '../../assets/images/Scarecrow.png'
 import CompassoLogo from  '../../assets/images/LogoCompasso.png'

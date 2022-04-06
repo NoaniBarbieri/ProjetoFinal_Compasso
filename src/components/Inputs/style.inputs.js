@@ -15,7 +15,7 @@ export const UserInputStyle = styled.input`
     margin: 15px 0;
     border: 1px  #FFFFFF solid;
     border-radius: 50px;
-    background: url(${require('../../../assets/images/UserIcon.png')});
+    background: url(${require('../../assets/images/UserIcon.png')});
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: right 20px top 50%;
@@ -27,7 +27,7 @@ export const UserInputStyle = styled.input`
 `;
 
 export const PassInputStyle = styled(UserInputStyle)`
-    background: url(${require('../../../assets/images/PassIcon.png')});
+    background: url(${require('../../assets/images/PassIcon.png')});
     background-size: 20px 25.1px;
     background-repeat: no-repeat;
     background-position: right 20px top 50%;
