@@ -63,7 +63,7 @@ export const ContainerTop = styled.div`
     }
 
     @media (max-width: 320px){
-        margin-left: 25px;
+        margin-left: 35px;
         h1{
             font-size: 30px;
             margin-bottom: 10px;
@@ -96,6 +96,7 @@ export const LoginText = styled.p`
             font-size: 18px;
             margin-top: 25px;
             margin-bottom: 0px;
+            margin-left: 20px;
         }
 `
 

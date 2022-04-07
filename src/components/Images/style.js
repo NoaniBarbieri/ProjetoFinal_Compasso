@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const CompassLogoRigth = styled.img`
-    width: 300px;
-    height: 70px;
+    width: clamp(100px,65vw,306px);
+    max-height: 69px;
+    height: auto;
     margin: 35px auto 0 auto;
 
     @media screen and (max-width: 1024px){
@@ -14,8 +15,9 @@ export const CompassLogoLeft = styled.img`
     display: none;
     @media (max-width: 1024px){
         display:inline-block;
-        width: 270px;
-        height: 60px;
+        width: clamp(100px,65vw,306px);
+        max-height: 69px;
+        height: auto;
         margin-top: 20px;
         margin-bottom: 45px;
     }
