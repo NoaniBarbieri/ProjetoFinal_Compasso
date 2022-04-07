@@ -40,3 +40,4 @@ export const ImageLogo = styled.img`
     align-self: flex-start;
     margin: 20px;
 `
+
