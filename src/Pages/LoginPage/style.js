@@ -63,15 +63,15 @@ export const ContainerTop = styled.div`
     }
 
     @media (max-width: 320px){
+        margin-left: 25px;
         h1{
             font-size: 30px;
             margin-bottom: 10px;
             max-height: 50px;
-            margin-left: 15px;
+            
         }
         p{
             font-size: 10px;
-            margin-left: 15px;
             margin-right: 15px;
         }
             
@@ -88,7 +88,7 @@ export const LoginText = styled.p`
         font-weight: 400;
         font-size: 30px;
         line-height: 38px;
-        margin-top: 95px;
+        margin-top: 85px;
         margin-bottom: 15px;
         margin-right: 225px;
 
