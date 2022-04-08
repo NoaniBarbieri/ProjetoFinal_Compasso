@@ -1,6 +1,6 @@
 import React from 'react'
 import { ButtonStyle } from './style.buttons';
-import { Check } from '../Search/SearchLogin'
+import { Check } from '../SearchLogin/index'
 
 const LoginButton = () => {
   return (

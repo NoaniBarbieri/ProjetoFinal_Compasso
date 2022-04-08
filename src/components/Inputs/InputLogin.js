@@ -16,9 +16,10 @@ export function LogUserInput(){
 
 export function LogPassInput(){
     const { pass, setPass } = usePass();
-    console.log(pass)
+    localStorage.setItem('pass', pass.password);
+    setPass(pass)
     return (
-        <PassInputStyle  type="password" onChange={(e) => setPass({pass: e.target.value})} placeholder="Senha"/>
+        <PassInputStyle  type="password" onChange={(e) => setPass({password: e.target.value})} placeholder="Senha"/>
     );
 }
 
