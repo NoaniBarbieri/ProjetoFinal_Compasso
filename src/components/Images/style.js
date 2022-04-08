@@ -31,14 +31,32 @@ export const CompassLogoLeft = styled.img`
 `
 
 export const ImageScarecrow = styled.img`
-    height: 400px;
+    height: 460px;
     display: flex;
     align-self: center;
+
+    @media(max-width:1024px){
+        height: 400px;
+    }
+
+    @media(max-width:500px){
+        height: 300px;
+    }
+
+    @media(max-width:320px){
+        height: 200px;
+    }
+
 `
 
 export const ImageLogo = styled.img`
-    height: 50px;
+    height: 43px;
     display: flex;
     align-self: flex-start;
     margin: 20px;
+
+    @media(max-width:320px){
+        height: 30px;
+    }
+
 `
