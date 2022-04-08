@@ -1,4 +1,5 @@
 import { FooterContainer, FooterArea } from './style';
+import {InputFooter} from '../Inputs/input.footer'
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
             </FooterArea>
 
             <FooterArea>
-                {/* Area Input  */}
+                <InputFooter/>
             </FooterArea>
 
             <FooterArea>
