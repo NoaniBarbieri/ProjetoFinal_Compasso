@@ -6,11 +6,11 @@ export const FooterContainer = styled.div`
     bottom: 0;
     max-width: 100%;
     width: 100%;
-    height: 15%;
+    height: 12%;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
-    font-family: 'MarkPro';
+    font-family: MarkPro;
     color: #FFFFFF;
 `;
 export const FooterArea = styled.div`
@@ -27,7 +27,7 @@ export const FooterArea = styled.div`
     }
     
     .leftText {
-        font-family: 'MarkPro';
+        font-family: MarkPro;
         font-size: 12px;
         text-align: right;
         margin: 0 14px;
