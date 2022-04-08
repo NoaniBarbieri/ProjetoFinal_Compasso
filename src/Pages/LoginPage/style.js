@@ -122,10 +122,28 @@ export const FormContainer = styled.div`
 `
 
 export const ValidationContainer = styled.div`
-    max-width: 50%;
-    height: 70px;
+    width:100%;
+    height:55px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        @media (max-width: 420px){
+            height: 55px;
+        }
+`
+
+export const ErrorMessage = styled.p`
+    font-family: MarkPro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #E9B425;
 
     @media (max-width: 420px){
-        height: 55px;
+        font-size: 12px;
     }
 `

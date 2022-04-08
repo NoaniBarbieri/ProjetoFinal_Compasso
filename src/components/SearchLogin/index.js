@@ -7,9 +7,7 @@ export const Check = () => {
     if(userSave){
         const found = getUser().find(item => item.login === userSave && item.password == passSave )
         if(found){
-            console.log(found)
-        }else{
-            console.log("Usuário Invalido")
+            return found
         }
     }
     
