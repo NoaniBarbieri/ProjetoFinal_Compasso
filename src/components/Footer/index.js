@@ -1,5 +1,6 @@
 import { FooterContainer, FooterArea } from './style';
 import {InputFooter} from '../Inputs/input.footer'
+import { TimerToLogout } from '../Timer/index'
 
 const Footer = () => {
     return (
@@ -13,7 +14,7 @@ const Footer = () => {
             </FooterArea>
 
             <FooterArea>
-                 {/* Area Timer  */}
+                <TimerToLogout/>
             </FooterArea>
         </FooterContainer>
     );
