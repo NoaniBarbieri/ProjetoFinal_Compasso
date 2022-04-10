@@ -27,6 +27,13 @@ export const CompassLogoLeft = styled.img`
     }
     
 `
+export const LogoSearchPage = styled.img`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+`
 
 export const ImageScarecrow = styled.img`
     height: 400px;
