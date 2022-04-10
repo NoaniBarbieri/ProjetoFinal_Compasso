@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-/* TimerLogout */
 export const TimerLogoutContainer = styled.div`
     flex: 1;
     display: flex;
@@ -12,7 +11,7 @@ export const TimerLogoutContainer = styled.div`
         flex: 1;
         font-size: 14px;
         text-align: right;
-        padding-left: 24px;
+        padding-left: 16px;
     }
     
     div {
@@ -23,6 +22,7 @@ export const TimerLogoutContainer = styled.div`
         p {
             font-family: 'Roboto';
             font-size: 48px;
+            padding-left: 10px;
         }
     }
 
@@ -30,4 +30,5 @@ export const TimerLogoutContainer = styled.div`
         display: none;
     }
 `;
+
 
