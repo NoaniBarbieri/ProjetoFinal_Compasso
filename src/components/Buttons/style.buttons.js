@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ButtonStyle = styled.button `
     width: clamp(100px,80vw,379px);
+    height: 67px;
     padding: clamp(7px,3vw,20px) 20px;
     margin-bottom: 15px;
     margin-top: 10px;
@@ -14,6 +15,10 @@ export const ButtonStyle = styled.button `
     font-family: MarkProBold, sans-serif;
     font-size: 18px;
     color: #FFF;
+    text-align: center ;
+    display:flex;
+    justify-content: center;
+    align-items: center ;
 `
 
 /* Buttons Logout and Refresh */
@@ -51,3 +56,25 @@ export const ButtonLogout = styled(ButtonSquareFooter)`
     background-color: transparent;
     color: #FFF;
 `;
+
+/*Page 3 */
+export const SearchButtonStyle = styled(ButtonStyle)`
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+`
+export const OutButtonStyle = styled(SearchButtonStyle)`
+    margin-bottom: 0px;
+    border-color: #FFFFFF;
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF);
+    color: #000000;
+`;
+
+export const DivButtons = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`

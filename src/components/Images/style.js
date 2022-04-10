@@ -32,6 +32,7 @@ export const LogoSearchPage = styled.img`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 20px;
     height: 90%;
 `
 
