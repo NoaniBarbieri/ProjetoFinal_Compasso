@@ -44,7 +44,6 @@ input {
         margin: 0 auto;
         width: 70%;
         height: 45px;
-        background: #26292C;
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
         border-radius: 50px;
@@ -56,6 +55,7 @@ input {
         color: #FFFFFF;
         background: url(${require('../../assets/images/UserIcon.png')});
         background-repeat: no-repeat;
+        background-color: #26292C;
         background-position: 20px 50%;
         padding: 0 20px 0 50px;
 
@@ -94,5 +94,9 @@ export const LargeInput = styled(InputSearch)`
         font-size: 36px;
         margin: 5px;
         margin-bottom: 5px;
+        background-color: #24262a;
+        background-position: 20px 50%;
+        background-size: 25px;
+        
     }
 `

@@ -22,7 +22,7 @@ export const ContainerLogoSearch = styled.div`
 `
 export const ContainerResults = styled.div`
     min-width: 50%;
-    min-height: 380px;
+    min-height: 350px;
     max-height: 560px;
     margin: 5px
 `
