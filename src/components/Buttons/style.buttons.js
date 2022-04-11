@@ -59,6 +59,8 @@ export const ButtonLogout = styled(ButtonSquareFooter)`
 
 /*Page 3 */
 export const SearchButtonStyle = styled(ButtonStyle)`
+    margin-bottom: 0px;
+    margin-top: 8px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -67,10 +69,10 @@ export const SearchButtonStyle = styled(ButtonStyle)`
     text-align: center;
 `
 export const OutButtonStyle = styled(SearchButtonStyle)`
-    margin-bottom: 0px;
     border-color: #FFFFFF;
     background-image: linear-gradient(to right, #FFFFFF, #FFFFFF);
     color: #000000;
+    margin-bottom: 10px;
 `;
 
 export const DivButtons = styled.div`

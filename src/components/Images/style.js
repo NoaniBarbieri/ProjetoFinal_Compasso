@@ -28,12 +28,8 @@ export const CompassLogoLeft = styled.img`
     
 `
 export const LogoSearchPage = styled.img`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    height: 90%;
+    height: 50px;
+    margin: 10px;
 `
 
 export const ImageScarecrow = styled.img`

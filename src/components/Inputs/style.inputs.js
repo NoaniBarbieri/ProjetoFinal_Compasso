@@ -87,3 +87,12 @@ input {
 }
 
 `
+export const LargeInput = styled(InputSearch)`
+    input{
+        width: 80%;
+        height: 60px;
+        font-size: 36px;
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+`
