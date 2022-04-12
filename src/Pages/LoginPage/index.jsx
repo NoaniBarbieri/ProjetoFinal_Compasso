@@ -23,7 +23,7 @@ export const LoginPage = () =>  {
     resolver: yupResolver(schema,  { abortEarly: false })
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     const isUser = Check();
     if(isUser){
       navigate(('/home'));
