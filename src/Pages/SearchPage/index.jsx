@@ -4,7 +4,7 @@ import { LogoSearchPage } from '../../components/Images/style'
 import CompassLogoWhite from "../../assets/images/Logo-Compasso-Branco-hor 1.png"
 import { SearchButtonStyle, OutButtonStyle, DivButtons } from '../../components/Buttons/style.buttons'
 import { LargeInput } from '../../components/Inputs/style.inputs'
-import { InputAPI } from '../../components/Inputs/input.api';
+import { InputAPI } from '../../components/InputSearch/index';
 
 function SearchPage() {
 
