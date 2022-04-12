@@ -23,6 +23,7 @@ export const TextsMissionContainer = styled.div`
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    margin-bottom: 60px;
 
     @media (max-width: 90vh) {
         display: none;
