@@ -8,15 +8,14 @@ import LoginButton from '../../components/Buttons/ButtonLogin'
 // import for validations
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { userSchema } from '../../components/Validations';
+import{ schema } from '../../components/Validations/index'
 
 export const LoginPage = () =>  {
 
   const { handleSubmit, register, formState: { errors } } = useForm({
-    mode: "all",
-    resolver: yupResolver(userSchema)
+    mode: "onBlur",
+    resolver: yupResolver(schema)
   });
-
 
   return (
     <ContainerPage>
@@ -28,12 +27,12 @@ export const LoginPage = () =>  {
           </ContainerTop>
           <LoginText>Login</LoginText>
           <FormContainer>
-            <form onSubmit={handleSubmit()}>
-              <LogUserInput  name='user' {...register('user')}/>
-              <LogPassInput  name='password'  {...register('password')}/>
+            <form onSubmit={handleSubmit(() => {console.log("entrei")})}>
+              <LogUserInput  name="user" {...register("user")}/>
+              <LogPassInput  name="password"  {...register("password")}/>
               <ValidationContainer>
-                <ErrorMessage >{errors?.user?.message}</ErrorMessage>
-                <ErrorMessage >{errors?.password?.message}</ErrorMessage>
+                <ErrorMessage >{errors.user?.message}</ErrorMessage>
+                <ErrorMessage >{errors.password?.message}</ErrorMessage>
               </ValidationContainer>
               <LoginButton />
             </form>

@@ -122,7 +122,7 @@ export const FormContainer = styled.div`
 `
 
 export const ValidationContainer = styled.div`
-    width:100%;
+    width:380px;
     height:55px;
     margin-top: 10px;
     display: flex;
@@ -134,7 +134,7 @@ export const ValidationContainer = styled.div`
         }
 `
 
-export const ErrorMessage = styled.p`
+export const ErrorMessage = styled.span`
     font-family: MarkPro;
     font-style: normal;
     font-weight: bold;
