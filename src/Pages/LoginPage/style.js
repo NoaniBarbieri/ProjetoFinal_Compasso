@@ -62,8 +62,12 @@ export const ContainerTop = styled.div`
         line-height: 20px;
     }
 
+    @media (max-width: 360px){
+       margin-left: 10px;
+    }
+
     @media (max-width: 320px){
-        margin-left: 25px;
+        margin-left: 35px;
         h1{
             font-size: 30px;
             margin-bottom: 10px;
@@ -96,6 +100,11 @@ export const LoginText = styled.p`
             font-size: 18px;
             margin-top: 25px;
             margin-bottom: 0px;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 360px){
+            margin-left: 20px;
         }
 `
 
@@ -113,10 +122,28 @@ export const FormContainer = styled.div`
 `
 
 export const ValidationContainer = styled.div`
-    max-width: 50%;
-    height: 70px;
+    width:380px;
+    height:55px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        @media (max-width: 420px){
+            height: 55px;
+        }
+`
+
+export const ErrorMessage = styled.span`
+    font-family: MarkPro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #E9B425;
 
     @media (max-width: 420px){
-        height: 55px;
+        font-size: 12px;
     }
 `

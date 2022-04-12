@@ -1,10 +1,9 @@
 import React from 'react'
 import { ButtonStyle } from './style.buttons';
-import { Check } from '../Search/SearchLogin'
 
 const LoginButton = () => {
   return (
-    <ButtonStyle type="submit" onClick={() => Check()}>Continuar</ButtonStyle>
+    <ButtonStyle type="submit" >Continuar</ButtonStyle>
   );
 }
 
