@@ -3,21 +3,29 @@ import styled from 'styled-components';
 export const NotFoundContainer = styled.div`    
     min-width: 100%;
     min-height: 100%;
-    position: absolute;
     display: flex;
     align-items: center;
+    flex-direction: row ;
     font-family: MarkPro;
+    
+    @media(max-width:320px){
+        flex-direction: column ;
+    }
+    @media(max-width:1024px){
+        flex-direction: column ;
+    }
+
 `
 
 export const TextNotFound = styled.div`
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column ;
     align-items: center;
     justify-content: center;
     margin: 100px;
     border-radius: 40px;
     height: 400px;
-    width: 35%;
+    width: 40%;
 
     h1{
         font-family: MarkProBold;
@@ -31,6 +39,7 @@ export const TextNotFound = styled.div`
     }
 
     p{
+        width: 78%;
         font-size: 25px;
         margin-bottom: 20px;
     }
@@ -54,6 +63,70 @@ export const TextNotFound = styled.div`
     }
     button:hover{
         color: orangered;
+    }
+
+    @media(max-width:1024px){
+        max-height: 300px ;
+        min-width: 100% ;
+        margin: 15px;
+        h2{
+            font-size: 25px;
+            width: 90%;
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+            width: 80%;
+            text-align: center;
+        }
+    }
+
+    @media(max-width:500px){
+        max-height: 250px ;
+        min-width: 100% ;
+        margin: 0;
+        h1{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+    @media(max-width:320px){
+        margin: 10px;
+        width: 80%;
+        height: 50%;
+        h1{
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        h2{
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        p{
+            width: 80%;
+            margin-bottom: 5px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        button{
+            width: 170px;
+            height: 54px;
+            font-size: 12px;
+        }
     }
 `
 
