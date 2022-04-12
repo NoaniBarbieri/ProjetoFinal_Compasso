@@ -54,7 +54,6 @@ export const ImageLogo = styled.img`
     display: flex;
     align-self: flex-start;
     margin: 20px;
-
     @media(max-width:320px){
         height: 30px;
     }
