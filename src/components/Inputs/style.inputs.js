@@ -89,7 +89,7 @@ input {
 `
 export const LargeInput = styled(InputSearch)`
     input{
-        width: 80%;
+        width: 60%;
         height: 60px;
         font-size: 36px;
         margin: 5px;
@@ -97,6 +97,12 @@ export const LargeInput = styled(InputSearch)`
         background-color: #24262a;
         background-position: 20px 50%;
         background-size: 25px;
-        
+    }
+
+    @media(max-width: 1023px){
+        input{ 
+            width: 70%;
+            height: 58px;
+        }
     }
 `

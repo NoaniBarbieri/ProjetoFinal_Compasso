@@ -67,6 +67,12 @@ export const SearchButtonStyle = styled(ButtonStyle)`
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+
+    @media(max-width:1024px){
+        font-size: 26px;
+        width: 260px;
+        height: 58px;
+    }
 `
 export const OutButtonStyle = styled(SearchButtonStyle)`
     border-color: #FFFFFF;

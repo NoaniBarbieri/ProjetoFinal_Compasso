@@ -22,9 +22,14 @@ export const ContainerLogoSearch = styled.div`
 `
 export const ContainerResults = styled.div`
     min-width: 50%;
-    min-height: 350px;
+    min-height: 280px;
     max-height: 560px;
-    margin: 5px
+    margin: 5px;
+
+    @media(max-width: 1023px){
+        min-width: 80%;
+        min-height: 240px;
+    }
 `
 export const SearchContainer = styled.div`
     display: flex ;
@@ -32,4 +37,10 @@ export const SearchContainer = styled.div`
     margin-top: 10px ;
     min-height: 200px;
     width: 65%;
+
+    @media(max-width: 1024px){
+        min-width: 100%;
+        min-height: 120px;
+    }
+
 `  
