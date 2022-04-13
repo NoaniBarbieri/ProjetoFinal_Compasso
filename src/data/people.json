@@ -21,7 +21,8 @@
       {
         "login": "silvio.santos",
         "password": 123456789,
-        "local": "21.093940079403772, -86.76712837712272"
+        "local": "21.093940079403772, -86.76712837712272",
+        "state": "MX"
       },
       {
         "login": "thauany.martins",

@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/images/LogoCompasso.png"
 import { Nav, ContainerHeader } from "./style";
 import {Clock} from '../Clock/index'
+import Climate from '../Climate/index'
 
 function Header() {
     return (
@@ -9,7 +10,7 @@ function Header() {
             <Nav>
                 <img className="logo" src={logo} alt="projectHome"/>
                 <Clock/>
-                <h1>API CLIMA</h1>
+                <Climate/>
             </Nav>
         </ContainerHeader>
     )

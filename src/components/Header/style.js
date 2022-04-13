@@ -24,7 +24,6 @@ export const Nav = styled.nav`
     width: 100%;
     height: auto;
     padding-top: 10px;
-
     @media (max-width: 400px) {
         p {
             font-size: 12px;
