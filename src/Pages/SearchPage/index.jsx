@@ -3,16 +3,9 @@ import { BodyPage, SearchContainer,ContainerLogoSearch, ContainerResults} from '
 import { LogoSearchPage } from '../../components/Images/style'
 import CompassLogoWhite from "../../assets/images/Logo-Compasso-Branco-hor 1.png"
 import { SearchButtonStyle, OutButtonStyle, DivButtons } from '../../components/Buttons/style.buttons'
-import { LargeInput } from '../../components/Inputs/style.inputs'
-import { InputAPI } from '../../components/InputSearch/index';
+import InputSearchDevs from '../../components/InputSearchDevs/index'
 
 function SearchPage() {
-
-  const [user, setUser] = useState("");
-
-  const getUser = () => {
-    console.log("teste")
-  }
 
   return (
      <BodyPage>
@@ -23,14 +16,9 @@ function SearchPage() {
         {/*Adicionar o Texto da busca*/}
       </ContainerResults>
       <SearchContainer>
-      <LargeInput type="text" onChange={text => setUser(text.target.value)} onKeyPress={event => {
-                        if (event.key === 'Enter') {
-                            getUser()
-                        }
-      }}>{InputAPI()}</LargeInput>
-
+        <InputSearchDevs></InputSearchDevs>
         <DivButtons>
-          <SearchButtonStyle type="submit"s>Buscar</SearchButtonStyle>
+          <SearchButtonStyle type="submit">Buscar</SearchButtonStyle>
           <OutButtonStyle type="button">Sair</OutButtonStyle>
         </DivButtons>
         
