@@ -24,7 +24,7 @@ export const ClimateStyle = styled.div `
         img {
             width: 50px;
             height: 50px;
-            margin-right: 20px;
+            margin-right: 5px;
         }
 
         h1{
