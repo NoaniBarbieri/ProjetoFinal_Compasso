@@ -5,6 +5,7 @@ export const ClimateStyle = styled.div `
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background:#f6f6f6;
 
     p{
         font-size: 14px;
@@ -16,7 +17,7 @@ export const ClimateStyle = styled.div `
 
     div{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         
@@ -24,7 +25,6 @@ export const ClimateStyle = styled.div `
         img {
             width: 50px;
             height: 50px;
-            margin-right: 5px;
         }
 
         h1{

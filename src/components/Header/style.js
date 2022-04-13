@@ -7,7 +7,7 @@ export const ContainerHeader = styled.div`
     position: fixed;
     top: 0;
     padding: 0 3%;
-    background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
+    background:#f6f6f6;
     @media (max-width: 1023px) {
 
         align-items: center;
