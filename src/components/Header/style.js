@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const ContainerHeader = styled.div`
     display: flex;
     width: 100%;
-    height: 15%;
+    height: 18%;
     position: fixed;
     top: 0;
     padding: 0 3%;
+    background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
     @media (max-width: 1023px) {
 
         align-items: center;
