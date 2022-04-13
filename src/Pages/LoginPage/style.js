@@ -83,6 +83,18 @@ export const ContainerTop = styled.div`
 
 `
 
+export const ContainerInput = styled.div`
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+`
+export const ContainerButton= styled.div`
+    display:flex;
+    align-content: center;
+    justify-content: center;
+`
+
 export const LoginText = styled.p`
         display: flex;
         max-width: 81px;
@@ -105,6 +117,10 @@ export const LoginText = styled.p`
 
         @media (max-width: 360px){
             margin-left: 20px;
+        }
+
+        @media (max-width: 2820px){
+            margin-left: 60px;
         }
 `
 
