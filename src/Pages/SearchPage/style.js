@@ -21,7 +21,9 @@ export const ContainerLogoSearch = styled.div`
     margin: 10px;
 `
 export const ContainerResults = styled.div`
-    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    width: 60%;
     min-height: 280px;
     max-height: 560px;
     margin: 5px;
