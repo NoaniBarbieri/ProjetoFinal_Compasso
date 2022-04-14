@@ -146,7 +146,7 @@ export const ValidationContainer = styled.div`
     align-items: center;
     flex-direction: column;
         @media (max-width: 420px){
-            height: 55px;
+            height: 45px;
         }
 `
 

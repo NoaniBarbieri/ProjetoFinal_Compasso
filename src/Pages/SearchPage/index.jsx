@@ -2,8 +2,9 @@ import React, { useState, useEffect} from 'react';
 import { BodyPage, SearchContainer,ContainerLogoSearch, ContainerResults} from './style'
 import { LogoSearchPage } from '../../components/Images/style'
 import CompassLogoWhite from "../../assets/images/Logo-Compasso-Branco-hor 1.png"
-import { SearchButtonStyle, OutButtonStyle, DivButtons } from '../../components/Buttons/style.buttons'
+import { SearchButtonStyle, DivButtons } from '../../components/Buttons/style.buttons'
 import InputSearchDevs from '../../components/InputSearchDevs/index'
+import LogoutButtonSearch  from '../../components/Buttons/Button.logoutSearch'
 import { LargeInput } from '../../components/Inputs/style.inputs'
 import { getDevs } from '../../helpers/devsAPI'
 import { TextSearch } from '../../components/TextSearch/index'
@@ -54,7 +55,7 @@ const SearchPage = (props) => {
         }}>{InputSearchDevs()}</LargeInput>
         <DivButtons>
           <SearchButtonStyle type="submit" onClick={getUser}>Buscar</SearchButtonStyle>
-          <OutButtonStyle type="button">Sair</OutButtonStyle>
+          <LogoutButtonSearch/>
         </DivButtons>
         
       </SearchContainer>

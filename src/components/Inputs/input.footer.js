@@ -6,7 +6,7 @@ export function InputFooter(){
 
     const [userHome, setUserHome] = useState('');
     const navigate = useNavigate();
-
+ 
     return (
         <InputSearch>
             <input type={'text'} onChange={e => setUserHome(e.target.value)} placeholder={'Buscar usuários'} onKeyPress={event => {
