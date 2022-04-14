@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { TimerLogoutContainer } from './style';
 import { ButtonFooterContainer, ButtonResetTimer, ButtonLogout } from "../Buttons/style.buttons";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../providers/authUser";
+import { usePass } from "../../providers/authPassword";
 
 export const TimerToLogout = () => {
 
@@ -27,10 +29,25 @@ export const TimerToLogout = () => {
 
     useEffect(() => {
         if (timer === 0) {
-            navigate('/');
+            localStorage.removeItem('user')
+            setUser({user: ''})
+            localStorage.removeItem('pass')
+            setPass({password: ''})
+            navigate('/')
         }
 
     }, [timer]);
+
+    const { setUser } = useAuth();
+    const { setPass } = usePass();
+
+    const logout = () => {
+        localStorage.removeItem('user')
+        setUser({user: ''})
+        localStorage.removeItem('pass')
+        setPass({password: ''})
+        navigate('/')
+    }
 
     return (
         <>
@@ -44,7 +61,7 @@ export const TimerToLogout = () => {
 
             <ButtonFooterContainer>
                 <ButtonResetTimer onClick={resetTimer} >Continuar<br />Navegando</ButtonResetTimer>
-                <ButtonLogout onClick={() => navigate('/')} >Logout</ButtonLogout>
+                <ButtonLogout onClick={logout} >Logout</ButtonLogout>
             </ButtonFooterContainer>
         </>
     )

@@ -19,6 +19,11 @@ export const ButtonStyle = styled.button `
     display:flex;
     justify-content: center;
     align-items: center ;
+
+    @media(max-width: 400px){
+        height: 55px;
+        width: 220px;
+    }
 `
 
 /* Buttons Logout and Refresh */

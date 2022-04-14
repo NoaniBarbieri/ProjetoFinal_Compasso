@@ -106,7 +106,7 @@ export const LoginText = styled.p`
         line-height: 38px;
         margin-top: 85px;
         margin-bottom: 15px;
-        margin-right: 225px;
+        margin-right: 280px;
 
         @media (max-width: 320px){
             font-size: 18px;
@@ -116,7 +116,7 @@ export const LoginText = styled.p`
         }
 
         @media (max-width: 360px){
-            margin-left: 20px;
+            margin-right: 250px;
         }
 
         @media (max-width: 2820px){
