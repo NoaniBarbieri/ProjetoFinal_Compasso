@@ -29,6 +29,10 @@ export const CompassLogoLeft = styled.img`
     }
     
 `
+export const LogoSearchPage = styled.img`
+    height: 50px;
+    margin: 10px;
+`
 
 export const ImageScarecrow = styled.img`
     height: 460px;

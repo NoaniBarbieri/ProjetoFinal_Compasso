@@ -40,24 +40,24 @@ export const InputSearch = styled.div`
     align-items: center;
     height: 100%;
 
-    input {
-            margin: 0 auto;
-            width: 75%;
-            height: 45px;
-            background: #26292C;
-            border: 1px solid #FFFFFF;
-            box-sizing: border-box;
-            border-radius: 50px;
-            font-family: 'Roboto';
-            font-size: 14px;
-            outline: 0;
-            text-align: center;
-            justify-content: space-between;
-            color: #FFFFFF;
-            background: url(${require('../../assets/images/UserIcon.png')});
-            background-repeat: no-repeat;
-            background-position: 20px 50%;
-            padding: 0 20px 0 50px;
+input {
+        margin: 0 auto;
+        width: 70%;
+        height: 45px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 50px;
+        font-family: 'Roboto';
+        font-size: 14px;
+        outline: 0;
+        text-align: center;
+        justify-content: space-between;
+        color: #FFFFFF;
+        background: url(${require('../../assets/images/UserIcon.png')});
+        background-repeat: no-repeat;
+        background-color: #26292C;
+        background-position: 20px 50%;
+        padding: 0 20px 0 50px;
 
         &:focus {
             border: 1px solid #E9B425;
@@ -87,4 +87,23 @@ export const InputSearch = styled.div`
         }
     }
 
+`
+export const LargeInput = styled(InputSearch)`
+    input{
+        width: 60%;
+        height: 60px;
+        font-size: 36px;
+        margin: 5px;
+        margin-bottom: 5px;
+        background-color: #24262a;
+        background-position: 20px 50%;
+        background-size: 25px;
+    }
+
+    @media(max-width: 1023px){
+        input{ 
+            width: 70%;
+            height: 58px;
+        }
+    }
 `

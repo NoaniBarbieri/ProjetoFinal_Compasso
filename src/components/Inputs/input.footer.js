@@ -12,7 +12,7 @@ export function InputFooter(){
             <input type={'text'} onChange={e => setUserHome(e.target.value)} placeholder={'Buscar usuários'} onKeyPress={event => {
             if (event.key === 'Enter') {
                 if (userHome) {
-                    navigate(('/SearchPage'), {userData:userHome});
+                    navigate(('/searchpage'), {userData:userHome});
                 }
             }
             }}></input>
