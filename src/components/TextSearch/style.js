@@ -10,8 +10,14 @@ export const TextResults = styled.div`
     align-items: center;
     p {
         font-family: 'Roboto';
-        font-size: clamp(20px,3.5vw,28px);
+        font-size: clamp(24px,3.5vw,30px);
         text-align: left;
         color: #fff; 
+    }
+
+    @media(max-width: 400px){
+        p{
+            font-size: 16px;
+        }
     }
 `

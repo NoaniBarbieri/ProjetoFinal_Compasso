@@ -102,8 +102,19 @@ export const LargeInput = styled(InputSearch)`
 
     @media(max-width: 1023px){
         input{ 
+            margin-top: 20px;
             width: 70%;
             height: 58px;
+            font-size: 26px;
+        }
+    }
+
+    @media(max-width: 400px){
+        input{ 
+            width: 90%;
+            height: 40px;
+            background-size: 18px;
+            font-size: 20px;
         }
     }
 `

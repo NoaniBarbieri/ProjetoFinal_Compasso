@@ -75,8 +75,14 @@ export const SearchButtonStyle = styled(ButtonStyle)`
 
     @media(max-width:1024px){
         font-size: 26px;
-        width: 260px;
+        width: 270px;
         height: 58px;
+    }
+
+    @media(max-width:400px){
+        font-size: 18px;
+        width: 240px;
+        height: 40px;
     }
 `
 export const OutButtonStyle = styled(SearchButtonStyle)`
