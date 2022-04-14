@@ -64,8 +64,8 @@ export const ButtonLogout = styled(ButtonSquareFooter)`
 
 /*Page 3 */
 export const SearchButtonStyle = styled(ButtonStyle)`
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 2px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;

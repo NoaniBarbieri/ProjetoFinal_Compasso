@@ -50,8 +50,8 @@ export const SearchContainer = styled.div`
     min-height: 200px;
     width: 65%;
 
-    @media(max-width: 1024px){
-        min-width: 100%;
+
+    @media(max-width: 1023px){
         min-height: 120px;
     }
 
