@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const ContainerHeader = styled.div`
     display: flex;
     width: 100%;
-    height: 15%;
+    height: 18%;
     position: fixed;
     top: 0;
     padding: 0 3%;
+    background:#f6f6f6;
     @media (max-width: 1023px) {
 
         align-items: center;
@@ -24,7 +25,6 @@ export const Nav = styled.nav`
     width: 100%;
     height: auto;
     padding-top: 10px;
-
     @media (max-width: 400px) {
         p {
             font-size: 12px;

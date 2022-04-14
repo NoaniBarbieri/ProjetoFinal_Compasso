@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ContainerPage, ContainerLeft, ContainerRigth,ContainerTop,LoginText, FormContainer, ValidationContainer, ErrorMessage } from './style'
+import { ContainerPage, ContainerLeft, ContainerRigth, ContainerTop, ContainerInput, ContainerButton, LoginText, FormContainer, ValidationContainer, ErrorMessage } from './style'
 import CompassLogoWhite from "../../assets/images/Logo-Compasso-Branco-hor 1.png"
 import { CompassLogoRigth, CompassLogoLeft } from '../../components/Images/style'
 import  { LogUserInput, LogPassInput } from '../../components/Inputs/InputLogin'
@@ -45,14 +45,18 @@ export const LoginPage = () =>  {
           <LoginText>Login</LoginText>
           <FormContainer>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <LogUserInput  name="user" {...register("user")}/>
-              <LogPassInput  name="password"  {...register("password")}/>
+              <ContainerInput>
+                <LogUserInput  name="user" {...register("user")}/>
+                <LogPassInput  name="password"  {...register("password")}/>
+              </ContainerInput>
               <ValidationContainer>
                 <ErrorMessage>{status.menssage}</ErrorMessage>
                 <ErrorMessage >{errors.user?.message}</ErrorMessage>
                 <ErrorMessage >{errors.password?.message}</ErrorMessage>
               </ValidationContainer>
-              <LoginButton />
+              <ContainerButton>
+                <LoginButton />
+              </ContainerButton>
             </form>
           </FormContainer>
         </ContainerLeft>
