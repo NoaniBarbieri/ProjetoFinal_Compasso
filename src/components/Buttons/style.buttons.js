@@ -19,6 +19,11 @@ export const ButtonStyle = styled.button `
     display:flex;
     justify-content: center;
     align-items: center ;
+
+    @media(max-width: 400px){
+        height: 55px;
+        width: 220px;
+    }
 `
 
 /* Buttons Logout and Refresh */
@@ -59,8 +64,8 @@ export const ButtonLogout = styled(ButtonSquareFooter)`
 
 /*Page 3 */
 export const SearchButtonStyle = styled(ButtonStyle)`
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 2px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -70,8 +75,14 @@ export const SearchButtonStyle = styled(ButtonStyle)`
 
     @media(max-width:1024px){
         font-size: 26px;
-        width: 260px;
+        width: 270px;
         height: 58px;
+    }
+
+    @media(max-width:400px){
+        font-size: 18px;
+        width: 240px;
+        height: 40px;
     }
 `
 export const OutButtonStyle = styled(SearchButtonStyle)`

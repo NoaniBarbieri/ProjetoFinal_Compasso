@@ -90,20 +90,31 @@ input {
 `
 export const LargeInput = styled(InputSearch)`
     input{
-        width: 60%;
-        height: 60px;
+        width: 58%;
+        height: 58px;
         font-size: 36px;
         margin: 5px;
         margin-bottom: 5px;
         background-color: #24262a;
         background-position: 20px 50%;
-        background-size: 25px;
+        background-size: 22px;
     }
 
     @media(max-width: 1023px){
         input{ 
+            margin-top: 20px;
             width: 70%;
             height: 58px;
+            font-size: 26px;
+        }
+    }
+
+    @media(max-width: 400px){
+        input{ 
+            width: 75%;
+            height: 40px;
+            background-size: 18px;
+            font-size: 20px;
         }
     }
 `

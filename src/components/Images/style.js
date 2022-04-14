@@ -32,6 +32,11 @@ export const CompassLogoLeft = styled.img`
 export const LogoSearchPage = styled.img`
     height: 50px;
     margin: 10px;
+
+    @media(max-width: 400px){
+        height: 30px;
+        margin: 0px;
+    }
 `
 
 export const ImageScarecrow = styled.img`

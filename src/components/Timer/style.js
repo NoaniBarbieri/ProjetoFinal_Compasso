@@ -9,9 +9,9 @@ export const TimerLogoutContainer = styled.div`
 
     span {
         flex: 1;
-        font-size: 14px;
+        font-size: 12px;
         text-align: right;
-        padding-left: 16px;
+        padding-left: 4px;
     }
     
     div {
@@ -21,8 +21,8 @@ export const TimerLogoutContainer = styled.div`
 
         p {
             font-family: 'Roboto';
-            font-size: 48px;
-            padding-left: 10px;
+            font-size: 38px;
+            padding-left: 2px;
         }
     }
 
