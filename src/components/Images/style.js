@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const CompassLogoRigth = styled.img`
-    width: 300px;
-    height: 70px;
+    width: clamp(100px,65vw,306px);
+    max-height: 69px;
+    height: auto;
     margin: 35px auto 0 auto;
 
     @media screen and (max-width: 1024px){
@@ -14,8 +15,9 @@ export const CompassLogoLeft = styled.img`
     display: none;
     @media (max-width: 1024px){
         display:inline-block;
-        width: 270px;
-        height: 60px;
+        width: clamp(100px,65vw,306px);
+        max-height: 69px;
+        height: auto;
         margin-top: 20px;
         margin-bottom: 45px;
     }
@@ -33,15 +35,31 @@ export const LogoSearchPage = styled.img`
 `
 
 export const ImageScarecrow = styled.img`
-    height: 400px;
+    height: 460px;
     display: flex;
     align-self: center;
+
+    @media(max-width:1024px){
+        height: 400px;
+    }
+
+    @media(max-width:500px){
+        height: 300px;
+    }
+
+    @media(max-width:320px){
+        height: 200px;
+    }
+
 `
 
 export const ImageLogo = styled.img`
-    height: 50px;
+    height: 43px;
     display: flex;
     align-self: flex-start;
     margin: 20px;
-`
+    @media(max-width:320px){
+        height: 30px;
+    }
 
+`

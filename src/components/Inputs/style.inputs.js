@@ -34,11 +34,11 @@ export const PassInputStyle = styled(UserInputStyle)`
 `
 
 export const InputSearch = styled.div`
-flex: 1;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
 input {
         margin: 0 auto;
@@ -59,32 +59,33 @@ input {
         background-position: 20px 50%;
         padding: 0 20px 0 50px;
 
-    &:focus {
-        border: 1px solid #E9B425;
+        &:focus {
+            border: 1px solid #E9B425;
+        }
+
+        &::placeholder {
+            color: #FFFFFF;
+            font-family: 'Roboto';
+        }
     }
 
-    &::placeholder {
-        color: #FFFFFF;
-        font-family: 'Roboto';
+    @media (max-width: 1023px) {
+        input {
+            width: 80%;
+            background-size: 15px;
+            padding: 0 15px 0 40px;
+            background-position: 15px 50%;
+        }
     }
-}
 
-@media (max-width: 1023px) {
-    input {
-        width: 80%;
-        background-size: 15px;
-        padding: 0 15px 0 40px;
-        background-position: 15px 50%;
+    @media (max-width: 320px) {
+        input {
+            background-size: 12px;
+            padding: 0 20px 0 35px;
+            font-size: 10px;
+            height: 50%;
+        }
     }
-}
-
-@media (max-width: 320px) {
-    input {
-        background-size: 12px;
-        padding: 0 20px 0 35px;
-        font-size: 10px;
-    }
-}
 
 `
 export const LargeInput = styled(InputSearch)`

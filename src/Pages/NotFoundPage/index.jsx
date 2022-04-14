@@ -15,7 +15,7 @@ const NotFound = () => {
                 <TextNotFound>
                     <h1>404</h1>
                     <h2>PAGE NOT FOUND</h2>
-                    <p>The page you were looking <br/>for doesn't exist.</p>
+                    <p>The page you were looking for doesn't exist.</p>
                     <Link to="/" style={{ textDecoration: 'none' }}><button>BACK TO LOGIN PAGE</button></Link>
                 </TextNotFound>
             </NotFoundContainer>
